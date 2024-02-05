@@ -29,30 +29,48 @@ img{
 
 
 
-
-
-/* INIZIO MAIN */
-
-main{
-   justify-content: center;
-   align-items: center;
-}
-
-
-
-.container{
-   width: 70%;
-   height: 80%;
+.debug{
    border: 1px solid;
 }
 
 
 
+/*------------ 
+DESKTOP FIRST
+-------------*/
 
 
 
+/* INIZIO MAIN */
+main{
+   justify-content: center;
+   align-items: center;
+}
+
+.container{
+   width: 70%;
+   height: 80%;
+   border: 3px solid;
+}
 
 
+.macro.col.left{
+   width: 30%;
+   height: 100%;
+   border: 1px solid;
+   background-color: red;
+}
+
+.macro.col.right{
+   width: 70%;
+   height: 100%;
+   border: 1px solid;
+   background-color: blue;
+}
+
+.macro.col{
+   height: 100%;
+}
 
 
 
