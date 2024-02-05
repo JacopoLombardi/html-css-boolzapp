@@ -56,14 +56,11 @@ main{
 
 .macro.col.left{
    width: 30%;
-   height: 100%;
    border: 1px solid;
-   background-color: red;
 }
 
 .macro.col.right{
    width: 70%;
-   height: 100%;
    border: 1px solid;
    background-color: blue;
 }
@@ -71,6 +68,32 @@ main{
 .macro.col{
    height: 100%;
 }
+
+
+
+/* INIZIO MACRO COL LEFT */
+
+
+.left .top{
+   height: 70px;
+   background-color: rgb(234, 234, 234);
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+
+.left .top img{
+   border-radius: 50%;
+   width: 55px;
+   height: 55px;
+}
+
+.left .top .fa-solid{
+   color: rgb(177, 177, 177);
+   font-size: 30px;
+   margin: 0 10px;
+}
+
 
 
 
