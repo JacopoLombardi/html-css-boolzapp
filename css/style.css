@@ -29,7 +29,8 @@ img{
 }
 
 
-.left .fa-solid{
+.left .fa-solid,
+.right .fa-solid{
    font-size: 25px;
 }
 
@@ -37,7 +38,10 @@ a{
    color: rgb(79, 116, 133);
 }
 
-
+.top{
+   background-color: rgb(234, 234, 234);
+   max-height: 70px;
+}
 
 
 
@@ -88,9 +92,11 @@ main{
 
 
 /* INIZIO .MACRO.COL.LEFT */
+
+/* TOP */
 .left .top{
    height: 70px;
-   background-color: rgb(234, 234, 234);
+   
    justify-content: space-between;
    align-items: center;
    padding: 0 20px;
@@ -197,10 +203,36 @@ main{
 
 
 
+/* INIZIO .MACRO.COL.RIGHT */
 
+/* TOP */
 
+.right .top{
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
 
+.right .info-contatto{
+   align-items: center;
+   padding: 8px;
+}
 
+.right .top img{
+   width: 55px;
+   border-radius: 50%;
+   margin-right: 20px;
+}
+
+.right .info-contatto .box p:last-child{
+   color: rgb(138, 138, 138);
+   font-weight: 600;
+}
+
+.right .top .fa-solid{
+   color: rgb(177, 177, 177);
+   margin: 0 10px;
+}
 
 
 
@@ -225,6 +257,9 @@ main{
   MEDIAQUERY
 ----------- */
 
+
+
+/* DA TABLET IN POI */
 @media(max-width: 992px){
 
    .container{
@@ -269,7 +304,7 @@ main{
 
 
 
-
+/* MOBILE */
 @media(max-width: 541px){
 
  
