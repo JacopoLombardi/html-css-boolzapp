@@ -4,8 +4,24 @@
    box-sizing: border-box;
 }
 
+body{
+   justify-content: center;
+   align-items: center;
+   font-family: 'Lato', sans-serif;
+   height: 100vh;
+   background: linear-gradient(
+      180deg,
+       rgb(0, 150, 136) 15%, 
+       rgb(219, 219, 211) 15%
+   );
+}
+
 img{
    width: 100%;
+}
+
+.flex{
+   display: flex;
 }
 
 
@@ -15,6 +31,20 @@ img{
 
 
 
+/* INIZIO MAIN */
+
+main{
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.container{
+   width: 70%;
+   height: 80%;
+   border: 1px solid;
+}
 
 
 
