@@ -27,6 +27,18 @@ img{
 
 
 
+.left .fa-solid{
+   font-size: 25px;
+}
+
+a{
+   color: rgb(79, 116, 133);
+}
+
+
+
+
+
 
 
 .debug{
@@ -50,7 +62,7 @@ main{
 .container{
    width: 70%;
    height: 80%;
-   border: 3px solid;
+   border: 1px solid;
 }
 
 
@@ -71,7 +83,7 @@ main{
 
 
 
-/* INIZIO MACRO COL LEFT */
+/* INIZIO .MACRO.COL.LEFT */
 
 
 .left .top{
@@ -90,9 +102,37 @@ main{
 
 .left .top .fa-solid{
    color: rgb(177, 177, 177);
-   font-size: 30px;
    margin: 0 10px;
 }
+
+
+.left .bell{
+   height: 90px;
+   background-color: rgb(142, 218, 252);
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 70px 0 20px;
+}
+
+
+.bell .circle{
+   width: 55px;
+   height: 55px;
+   background-color: white;
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+}
+
+.bell .circle:first-child{
+   color: rgb(142, 218, 252);
+}
+
+
+
+
+
+
 
 
 
