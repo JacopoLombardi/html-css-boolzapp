@@ -24,7 +24,9 @@ img{
    display: flex;
 }
 
-
+.relative{
+   position: relative;
+}
 
 
 .left .fa-solid{
@@ -84,8 +86,6 @@ main{
 
 
 /* INIZIO .MACRO.COL.LEFT */
-
-
 .left .top{
    height: 70px;
    background-color: rgb(234, 234, 234);
@@ -97,15 +97,15 @@ main{
 .left .top img{
    border-radius: 50%;
    width: 55px;
-   height: 55px;
 }
 
-.left .top .fa-solid{
+.left .top .fa-solid,
+.left .search .fa-solid{
    color: rgb(177, 177, 177);
    margin: 0 10px;
 }
 
-
+/* BELL */
 .left .bell{
    height: 90px;
    background-color: rgb(142, 218, 252);
@@ -114,8 +114,7 @@ main{
    padding: 0 70px 0 20px;
 }
 
-
-.bell .circle{
+.left .bell .circle{
    width: 55px;
    height: 55px;
    background-color: white;
@@ -124,23 +123,73 @@ main{
    align-items: center;
 }
 
-.bell .circle:first-child{
+.left .bell .circle:first-child{
    color: rgb(142, 218, 252);
 }
 
+/* SEARCH */
+.left .search{
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(250, 250, 250);
+}
 
+.left .search .box{
+   width: 95%;
+   height: 70%;
+   border: 1px solid rgba(234, 234, 234, 0.626);
+}
 
+.left .search .box input{
+   width: 100%;
+   color: rgb(177, 177, 177);
+   font-size: 17px;
+   border: none;
+}
 
+.left .search .box:first-child{
+   background-color: white;
+}
 
+.left .search .fa-solid{
+   font-size: 18px;
+   margin-top: 5px;
+}
 
+/* CONTATTI */
+.left .lista-contatti{
+   height: auto;
+   background-color: white;
+}
 
+.left .contatto{
+   height: auto;
+   align-items: center;
+}
 
+.left .contatto img{
+   width: 55px;
+   border-radius: 50%;
+   margin: 13px 20px;
+}
 
+.left .contatto .box p:nth-child(1){
+   font-size: 20px;
+}
 
+.left .contatto .box p:nth-child(2){
+   color: rgb(170, 170, 170);
+   font-size: 16px;
+}
 
-
-
-
+.left .contatto span{
+   font-size: 13px;
+   color: rgb(170, 170, 170);
+   position: absolute;
+   top: 15px;
+   right: 15px;
+}
 
 
 
