@@ -39,8 +39,12 @@ img{
    color: var(--lightgrey-turn-lightwhite);
 }
 
-a{
+.left .bell a{
    color: rgb(111, 133, 144);
+}
+
+.left .bell a:hover{
+   color: rgb(146, 146, 146);
 }
 
 .top{
@@ -57,19 +61,33 @@ a{
 
 .contatto:hover{
    background-color: rgb(235, 235, 235);
+   cursor: pointer;
 }
 
 .left .top .fa-solid:hover,
 .right .fa-solid:hover,
 .right .fa-regular:hover{
    color: rgb(192, 192, 192);
+   cursor: pointer;
+}
+
+.middle .fa-solid:hover .middle .menu-tendina{
+   display: block;
+}
+
+.left input[type=text]:focus{
+   outline: none;
+}
+
+.right input[type=text]:focus{
+   outline: none;
+   border: 2px solid rgb(194, 194, 194);
 }
 
 
 
-
 /* ---------
-  LIGHTMODE
+  LIGHT-MODE
 ---------- */
 
 :root{
@@ -273,7 +291,7 @@ main{
    background-image: var(--background-middle-turn-lightgrey);
    height: calc(100% - 140px);
    padding: 60px 40px;
-   overflow-y: hidden;
+   overflow-y: auto;
 }
 
 .middle .box:first-child{
@@ -300,6 +318,24 @@ main{
    color: var(--lightgrey-turn-lightwhite);
    bottom: 10px;
    right: 10px;
+}
+
+.middle .menu-tendina{
+   width: 140px;
+   padding: 10px;
+   font-size: 14px;
+   background-color: var(--white-turn-lightblack);
+   top: 35px;
+   right: 8px;
+   box-shadow: 1px 1px 15px 1px rgb(139, 139, 139);
+   display: none;
+   list-style: none;
+}
+
+.middle .menu-tendina a{
+   text-decoration: none;
+   color: rgb(125, 130, 132);
+   line-height: 170%;
 }
 
 
@@ -443,8 +479,16 @@ main{
       filter: opacity(80%);
    }
 
+   .contatto:hover{
+      background-color: rgb(73, 73, 73);
+   }
+
    .middle{
       background-size: cover;
+   }
+
+   .right input[type=text]:focus{
+      border: 2px solid rgb(106, 106, 106);
    }
 
 }
