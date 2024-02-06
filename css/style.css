@@ -17,7 +17,7 @@ body{
 }
 
 img{
-   width: 100%;
+   max-width: 100%;
 }
 
 .flex{
@@ -368,11 +368,6 @@ main{
 
 
 
-
-
-
-
-
 /* ----------
   MEDIAQUERY
 ----------- */
@@ -389,7 +384,7 @@ main{
 
    /* .MACRO.COL.LEFT */
    .macro.col.left{
-      width: 90px;
+      width: 100px;
    }
 
    .left .top .icon,
@@ -401,13 +396,11 @@ main{
    }
 
 
-
    /* .MACRO.COL.RIGHT */
    .macro.col.right{
       width: 100%;
    }
 }
-
 
 
 
@@ -423,7 +416,6 @@ main{
    }
 
 
-
    /* .MACRO.COL.RIGHT */
 
    /* TOP */
@@ -436,7 +428,6 @@ main{
       padding-top: 10px;
    }
   
-
    /* BOTTOM */
    .right .bottom i{
       display: none;
@@ -447,8 +438,6 @@ main{
    }
 
 }
-
-
 
 
 
