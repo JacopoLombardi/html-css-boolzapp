@@ -10,9 +10,9 @@ body{
    font-family: 'Lato', sans-serif;
    height: 100vh;
    background: linear-gradient(
-      180deg,
-       rgb(0, 150, 136) 15%, 
-       rgb(219, 219, 211) 15%
+      180deg, 
+      var(--body-background-green) 15%, 
+       var(--body-background-lightgrey) 15%
    );
 }
 
@@ -36,15 +36,15 @@ img{
 .right .fa-solid,
 .right .fa-regular{
    font-size: 25px;
-   color: rgb(177, 177, 177);
+   color: var(--lightgrey-turn-lightwhite);
 }
 
 a{
-   color: rgb(79, 116, 133);
+   color: rgb(111, 133, 144);
 }
 
 .top{
-   background-color: rgb(234, 234, 234);
+   background-color: var(--background-top-turn-darkgrey);
    max-height: 70px;
 }
 
@@ -59,14 +59,38 @@ a{
 
 
 
+/* ---------
+  LIGHTMODE
+---------- */
+
+:root{
+   --body-background-green: rgb(0, 150, 136);
+   --body-background-lightgrey: rgb(219, 219, 211);
+   --white-turn-lightblack: rgb(255, 255, 255);
+   --black-turn-white: rgb(0, 0, 0);
+   --lightgrey-turn-lightwhite: rgb(170, 170, 170);
+   --borderlightgrey-turn-darkgrey: rgb(214, 214, 214);
+   --background-top-turn-darkgrey: rgb(234, 234, 234);
+   --lightblue-turn-darkblue: rgb(142, 218, 252);
+   --lightwhite-turn-lightblack: rgb(243, 238, 234);
+   --lightgreen-turn-darkgreen: rgb(213, 249, 186);
+   --background-middle-turn-lightgrey: url(../img/mine.jpg);
+}
+
+
+
+
+
+
+
+
 /*------------ 
 DESKTOP FIRST
 -------------*/
 
-
-
 /* INIZIO MAIN */
 main{
+   color: var(--black-turn-white);
    justify-content: center;
    align-items: center;
 }
@@ -80,7 +104,7 @@ main{
 
 .macro.col.left{
    width: 380px;
-   background-color: white;
+   background-color: var(--white-turn-lightblack);
 }
 
 .macro.col.right{
@@ -97,7 +121,7 @@ main{
 /* TOP */
 .left .top{
    height: 70px;
-   border-right: 1px solid rgb(214, 214, 214);
+   border-right: 1px solid var(--borderlightgrey-turn-darkgrey);
    justify-content: space-between;
    align-items: center;
    padding: 0 20px;
@@ -117,14 +141,14 @@ main{
 /* BELL */
 .left .bell{
    height: 90px;
-   background-color: rgb(142, 218, 252);
+   background-color: var(--lightblue-turn-darkblue);
    align-items: center;
 }
 
 .left .bell .circle{
    width: 55px;
    height: 55px;
-   background-color: white;
+   background-color: var(--white-turn-lightblack);
    border-radius: 50%;
    justify-content: center;
    align-items: center;
@@ -132,7 +156,7 @@ main{
 }
 
 .left .bell .circle .fa-solid{
-   color: rgb(142, 218, 252);
+   color: var(--lightblue-turn-darkblue);
 }
 
 
@@ -141,42 +165,43 @@ main{
    height: 50px;
    justify-content: center;
    align-items: center;
-   background-color: rgb(250, 250, 250);
 }
 
 .left .search .box{
    width: 95%;
    height: 70%;
-   border: 1px solid rgba(234, 234, 234, 0.626);
+   border: 1px solid var(--borderlightgrey-turn-darkgrey);
 }
 
 .left .search .box input{
    width: 100%;
-   color: rgb(177, 177, 177);
+   background-color: var(--white-turn-lightblack);
+   color: var(--lightgrey-turn-lightwhite);
    font-size: 17px;
+   padding-left: 20px;
    border: none;
 }
 
-.left .search .box:first-child{
-   background-color: white;
+.left .search .box{
+   background-color: var(--white-turn-lightblack);
 }
 
 .left .search .fa-solid{
    font-size: 18px;
-   margin-top: 5px;
+   margin-top: 8px;
 }
 
 
 /* CONTATTI */
 .left .lista-contatti{
    height: calc(100% - 210px);
-   overflow: scroll;
+   overflow-y: scroll;
 }
 
 .left .contatto{
    height: auto;
    align-items: center;
-   border-top: 1px solid rgb(237, 237, 237);
+   border-top: 1px solid var(--borderlightgrey-turn-darkgrey);
 }
 
 .left .contatto img{
@@ -190,13 +215,13 @@ main{
 }
 
 .left .contatto .box p:nth-child(2){
-   color: rgb(170, 170, 170);
+   color: var(--lightgrey-turn-lightwhite);
    font-size: 16px;
 }
 
 .left .contatto span{
    font-size: 13px;
-   color: rgb(170, 170, 170);
+   color: var(--lightgrey-turn-lightwhite);
    position: absolute;
    top: 15px;
    right: 15px;
@@ -237,10 +262,10 @@ main{
 
 /* MIDDLE */
 .middle{
-   background-image: url(../img/mine.jpg);
+   background-image: var(--background-middle-turn-lightgrey);
    height: calc(100% - 140px);
    padding: 60px 40px;
-   overflow: scroll;        /* NON SI VEDE MA FUNZIONA IN MOBILE SOTTO I 360px CIRCA*/
+   overflow-y: hidden;
 }
 
 .middle .box:first-child{
@@ -248,11 +273,11 @@ main{
 }
 
 .middle .sended{
-   background-color: rgb(213, 249, 186);
+   background-color: var(--lightgreen-turn-darkgreen);
 }
 
 .middle .received{
-   background-color: white;
+   background-color: var(--white-turn-lightblack);
    margin-top: 20px;
 }
 
@@ -264,7 +289,7 @@ main{
 
 .middle span{
    font-size: 11px;
-   color: rgb(170, 170, 170);
+   color: var(--lightgrey-turn-lightwhite);
    bottom: 10px;
    right: 10px;
 }
@@ -273,7 +298,7 @@ main{
 /* BOTTOM */
 .right .bottom{
    height: 70px;
-   background-color: rgb(243, 238, 234);
+   background-color: var(--lightwhite-turn-lightblack);
    justify-content: space-evenly;
    align-items: center;
 }
@@ -286,7 +311,8 @@ main{
    border-radius: 6px;
    padding-left: 15px;
    margin: 10px 0;
-   color: rgb(79, 116, 133);
+   background-color: var(--white-turn-lightblack);
+   color: var(--lightgrey-turn-lightwhite);
 }
 
 
@@ -300,8 +326,6 @@ main{
 /* ----------
   MEDIAQUERY
 ----------- */
-
-
 
 /* DA TABLET IN POI */
 @media(max-width: 992px){
@@ -373,3 +397,64 @@ main{
    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------
+  DARK-MODE
+------------ */
+
+@media (prefers-color-scheme: dark){
+
+   :root{
+      --body-background-green: rgb(5, 77, 69);
+      --body-background-lightgrey: rgb(98, 98, 93);
+      --white-turn-lightblack: rgb(53, 53, 53);
+      --black-turn-white: rgb(240, 240, 240);
+      --lightgrey-turn-lightwhite: rgb(170, 170, 170);
+      --borderlightgrey-turn-darkgrey: rgb(98, 98, 98);
+      --background-top-turn-darkgrey: rgb(47, 47, 47);
+      --lightblue-turn-darkblue: rgb(60, 114, 139);
+      --lightwhite-turn-lightblack: rgb(44, 44, 44);
+      --lightgreen-turn-darkgreen: rgb(66, 114, 30);
+      --background-middle-turn-lightgrey: url(../img/background-chat.jpg);
+   }
+
+   .top img,
+   .lista-contatti .contatto img{
+      filter: opacity(80%);
+   }
+
+   .middle{
+      background-size: cover;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
