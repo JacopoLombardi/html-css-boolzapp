@@ -75,7 +75,7 @@ ul{
    cursor: pointer;
 }
 
-.middle .fa-solid:hover .menu-tendina{
+.middle .menu-tendina:hover .pop-up{
    display: block;
 }
 
@@ -315,6 +315,9 @@ main{
    font-size: 13px;
    top: 20px;
    right: 10px;
+   display: block;
+   text-align: right;
+   margin: 20px 20px 15px 0;
 }
 
 .middle span{
@@ -325,23 +328,23 @@ main{
 }
 
 .middle .menu-tendina{
-   width: 160px;
+   top: 0;
+   right: 0;
+}
+
+.middle .pop-up{
    padding: 10px;
-   font-size: 14px;
    background-color: var(--white-turn-lightblack);
-   top: 5px;
-   right: 8px;
    box-shadow: 1px 1px 15px 1px var(--lightgrey-turn-lightwhite);
+   margin-right: 10px;
    display: none;
    z-index: 1;
 }
 
-.middle .menu-tendina a{
+.middle .pop-up a{
    text-decoration: none;
-   font-size: 15px;
    color: rgb(125, 130, 132);
    line-height: 170%;
-   font-family: 'Lato', sans-serif;
 }
 
 
